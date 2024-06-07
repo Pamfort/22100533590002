@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="home-page">
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="addPatient.html">Add Patient</a></li>
+                <li><a href="addDoctor.html">Add Doctor</a></li>
+                <li><a href="listPatients.html">List Patients</a></li>
+                <li><a href="listDoctors.html">List Doctors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="index-main">
+        <section class="overview">
+            <div class="overview-item">
+                <h2>Total Patients</h2>
+                <p id="totalPatients">0</p>
+            </div>
+            <div class="overview-item">
+                <h2>Total Doctors</h2>
+                <p id="totalDoctors">0</p>
+            </div>
+        </section>
+        <section class="search">
+            <h2>Search</h2>
+            <input type="text" id="searchInput" placeholder="Search by name or ID..." oninput="filterResults()">
+            <div id="searchResults" class="search-results"></div>
+        </section>
+    </main>
+    <footer style="position: fixed;">
+        <p>&copy; This is the homepage of the Hospital Management System. You can navigate to add or list patients and doctors.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

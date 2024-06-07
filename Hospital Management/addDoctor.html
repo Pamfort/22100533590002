@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="add-doctor-page">
+    <header>
+        <h1>Add Doctor</h1>
+    </header>
+    <main>
+        <form id="doctorForm" class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="specialization">Specialization:</label>
+            <input type="text" id="specialization" name="specialization" required>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required>
+            <button type="submit" onclick="addDoctor">Add Doctor</button>
+        </form>
+        <a class="back-link" href="index.html">Back to Home</a>
+    </main>
+    <footer style="position: fixed;">
+        <p>&copy; Add a new doctor by filling out the form and clicking "Add Doctor".</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+/* Common styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+/* Header styles */
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: rgb(238, 12, 144);
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+/* Main content styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    max-width: 800px;
+}
+
+.index-main {
+    background-color: transparent;
+    /* Special case for index page */
+}
+
+.overview {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.overview-item {
+    background-color: #ddcbd7;
+    color: rgb(168, 71, 71);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(233, 12, 115);
+}
+
+.search input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-results {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.search-results div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-results div:last-child {
+    border-bottom: none;
+}
+
+
+/* Form styles */
+
+.form-container {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(168, 164, 164, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container label,
+.form-container input,
+.form-container select {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-container input,
+.form-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Stylish buttons */
+
+.form-container button,
+.back-link,
+nav ul li a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8baa1c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-container button:single-button,
+.back-link:hover,
+nav ul li a:hover {
+    background-color: #04021f;
+    transform: scale(1.05);
+}
+
+
+/* Table styles */
+
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: rgba(228, 178, 178, 0.85);
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin: 0;
+    padding: 0;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #af4c8e;
+    color: white;
+}
+
+
+/* Back link styles */
+
+.back-link {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #da5417;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #36183f;
+}
+
+
+/* Footer styles */
+
+footer {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #4e3840;
+    color: white;
+    bottom: 0;
+    position: static;
+}
+
+
+/* Page-specific background colors */
+
+body.home-page {
+    background-image: url(images\ \(4\).jpg);
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+body.add-patient-page {
+    background-image: url(patientform.jpg);
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+body.add-doctor-page {
+    background-image: url(doctor.jpg);
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+body.list-patients-page {
+    background-image: url(patientlist.jpg);
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+body.list-doctors-page {
+    background-image: url(doctorlist.jpg);
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
